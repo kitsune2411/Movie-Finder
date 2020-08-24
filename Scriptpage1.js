@@ -1,5 +1,5 @@
 // JavaScript source code
-onst tabItems = document.querySelectorAll('.tab-item');
+const tabItems = document.querySelectorAll('.tab-item');
 const tabContentItems = document.querySelectorAll('.tab-content-item');
 
 // Select tab content item
