@@ -8,7 +8,9 @@
 }
 body{
   background: #f2f2f2;
-}
+    padding-bottom: 40px;
+
+ }
 /* Navbar&searchbar */
 .van{
   background: #171c24;
@@ -237,7 +239,7 @@ body{
   margin: 10px 0;
 }
 
-/* CUSTOMIZE THE CAROUSEL
+ /* CUSTOMIZE THE CAROUSEL
     -------------------------------------------------- */
 
     /* Carousel base class */
@@ -264,11 +266,11 @@ body{
       height: 500px;
     }
     .carousel img {
-      position: absolute;
+      position: relative;
       top: 0;
       left: 0;
       min-width: 100%;
-      height: 500px;
+      max-height: 500px;
     }
 
     .carousel-caption {
@@ -367,6 +369,9 @@ body{
       .carousel {
         margin-left: -20px;
         margin-right: -20px;
+      }
+      .carousel .container {
+
       }
       .carousel .item {
         height: 300px;
