@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+body{
+  background: black !important;
+    padding-bottom: 40px;
+
+ }
+/* Navbar&searchbar */
+.van{
+  background: #171c24;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  padding: 0 100px;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  z-index:10;
+}
+.van .logo{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+.van .navitems{
+  display: flex;
+  flex: 1;
+  padding: 0 0 0 40px;
+}
+.van .navitems li{
+  list-style: none;
+  padding: 0 15px;
+}
+.van .navitems li a{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.van .navitems li a:hover{
+  color: #ff3d00;
+}
+.van form{
+  display: flex;
+  height: 40px;
+  padding: 2px;
+  background: #1e232b;
+  min-width: 18%!important;
+  border-radius: 2px;
+  border: 1px solid rgba(155,155,155,0.2);
+}
+.van form .searchdata{
+  width: 100%;
+  height: 100%;
+  padding: 0 10px;
+  color: #fff;
+  font-size: 17px;
+  border: none;
+  font-weight: 500;
+  background: none;
+}
+.van form button{
+  padding: 0 15px;
+  color: #fff;
+  font-size: 17px;
+  background: #ff3d00;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.van form button:hover{
+  background: #e63600;
+}
+.van .menu-icon,
+.van .cancelicon,
+.van .searchicon{
+  width: 40px;
+  text-align: center;
+  margin: 0 50px;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+.van .menu-icon span,
+.van .cancelicon,
+.van .searchicon{
+  display: none;
+}
+@media (max-width: 1245px) {
+  .van{
+    padding: 0 50px;
+  }
+}
+@media (max-width: 1140px){
+  .van{
+    padding: 0px;
+  }
+  .van .logo{
+    flex: 2;
+    text-align: center;
+  }
+  .van .navitems{
+    position: fixed;
+    z-index: 99;
+    top: 70px;
+    width: 100%;
+    left: -100%;
+    height: 100%;
+    padding: 10px 50px 0 50px;
+    text-align: center;
+    background: #14181f;
+    display: inline-block;
+    transition: left 0.3s ease;
+  }
+  .van .navitems.active{
+    left: 0px;
+  }
+  .van .navitems li{
+    line-height: 40px;
+    margin: 30px 0;
+  }
+  .van .navitems li a{
+    font-size: 20px;
+  }
+  .van form{
+    position: absolute;
+    top: 80px;
+    right: 50px;
+    opacity: 0;
+    pointer-events: none;
+    transition: top 0.3s ease, opacity 0.1s ease;
+  }
+  .van form.active{
+    top: 95px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .van form:before{
+    position: absolute;
+    content: "";
+    top: -13px;
+    right: 0px;
+    width: 0;
+    height: 0;
+    z-index: -1;
+    border: 10px solid transparent;
+    border-bottom-color: #1e232b;
+    margin: -20px 0 0;
+  }
+  .van form:after{
+    position: absolute;
+    content: '';
+    height: 60px;
+    padding: 2px;
+    background: #1e232b;
+    border-radius: 2px;
+    min-width: calc(100% + 20px);
+    z-index: -2;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .van .menu-icon{
+    display: block;
+  }
+  .van .searchicon,
+  .van .menu-icon span{
+    display: block;
+  }
+  .van .menu-icon span.hide,
+  .van .searchicon.hide{
+    display: none;
+  }
+  .van .cancelicon.show{
+    display: block;
+  }
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+h1 {
+  margin-bottom: 50px;
+  margin-top: -35px;
+  text-align: center;
+  font-size: 50px;
+  color: red;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  color: white;
+  
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #222831;
+  margin: 8px;
+  width: 80%;
+  height: 80%;
+  margin-left: 50px;
+  padding-bottom: 50px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  margin-top: 15px;
+  background-color: rgb(122, 122, 122);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
