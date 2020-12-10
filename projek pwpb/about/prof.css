@@ -213,7 +213,7 @@ h1 {
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  background-color: #222831;
+  background-color:#303030;
   margin: 8px;
   width: 80%;
   height: 80%;
@@ -239,7 +239,7 @@ h1 {
 }
 
 .title {
-  color: grey;
+  color: whitesmoke;
 }
 
 .button {
@@ -249,7 +249,7 @@ h1 {
   padding: 8px;
   color: white;
   margin-top: 15px;
-  background-color: rgb(122, 122, 122);
+  background-color:rgb(51, 204, 51);
   text-align: center;
   cursor: pointer;
   width: 100%;
