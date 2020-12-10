@@ -31,17 +31,27 @@
       </nav>
 
       <div class="tolong">
-        <h1 class="pa">Are You Need help?</h1>
+        <form name="myForm" onsubmit="return validateForm()" method="post" required>
+        <h1 class="pa">Are You Need Help?</h1>
         <br><br>
-        <h1 class="pala">You Can Read This Carefully!!</h1>
+        <h1 class="pala">Read This Carefully!!</h1>
         <br><br>
         <h3 class="can">If the video is can't to play, you can reload the website or video, or you can watch the video in another link.</h3>
         <br><br>
-        <h2 class="tema">You can chance the theme in this <a href="#">link</a></h2>
+        <h2 class="masalah">or you can chat <a href="../about/about.html">our team</a></h2>
         <br><br>
-        <h2 class="minta">If you have any request about the movie, you can type <a href="#">here</a></h2>
-        <br><br>
-        <h2 class="masalah">If you have some problem in this website, you can comment in  <a href="#">Feedback</a>  or you can chat our admin in  <a href="#">Contact</a></h2>
+        <h2 class="minta">If you have any request or Feedback about the movie, you can type here</a></h2>
+        <div class="container">
+            <form>
+            <label for="name"> Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name..">
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        
+            <input type="submit" value="Submit">
+          </form>
+        </div>
       </div>
+<script src="help.js"></script>
 </body>
 </html>

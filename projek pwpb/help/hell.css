@@ -209,9 +209,6 @@ body{
 .tolong .minta a {
     color: white;
 }
-.tolong .minta a:hover {
-    color: rgb(47, 47, 202);
-}
 .tolong .masalah {
     font-size: 22px;
 }
@@ -220,4 +217,36 @@ body{
 }
 .tolong .masalah a:hover {
     color: red;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  background-color: rgb(64,64,64);
+  color: white;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color:rgb(192,0,0);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color:  	rgb(255,0,0);
+}
+
+.container {
+  border-radius: 5px;
+  margin-top: 10px;
+  background-color: rgb(24,24,24);
+  padding: 20px;
 }
