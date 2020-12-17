@@ -7,8 +7,8 @@ const infiniteScroll = (wrapperEl, moreBtn) => {
     let currentShowNum = 0;
     let lastShowNum = 0;
 
-    const SHOW_NUM = 4;
-    const INTERVAL = 200;
+    const SHOW_NUM = 14;
+    const INTERVAL = 5;
 
     showItems();
 
@@ -25,8 +25,6 @@ const infiniteScroll = (wrapperEl, moreBtn) => {
                     items[i].classList.add('show');
                 }, INTERVAL * (i - lastShowNum));
             }
-
-            moreBtnDOM.remove();
 
         } else {
             for(let i = lastShowNum; i < currentShowNum; i++){
