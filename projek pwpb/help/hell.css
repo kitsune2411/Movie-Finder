@@ -218,10 +218,10 @@ body{
 .tolong .masalah a:hover {
     color: red;
 }
-input[type=text], select, textarea {
+input[type=text], textarea {
   width: 100%;
   padding: 12px;
-  border: 1px solid #ccc;
+  border: none;
   background-color: rgb(64,64,64);
   color: white;
   border-radius: 4px;
@@ -229,6 +229,9 @@ input[type=text], select, textarea {
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
+}
+input:focus, textarea:focus {
+  border: 1px solid #ccc;
 }
 
 input[type=submit] {
